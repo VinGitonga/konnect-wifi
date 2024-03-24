@@ -18,6 +18,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        kblack:'#050505',
+        kLightGrey:'#FCFCFC',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
