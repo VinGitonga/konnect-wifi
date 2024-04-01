@@ -21,7 +21,7 @@ interface INavOption {
 
 const Home = () => {
   return (
-    <div>
+    <div >
       <div className="bg-kLightGrey w-full flex  justify-center items-center">
         <div className="py-8">
           <img src="/logos/konnect_main.png" className="m" />
@@ -54,15 +54,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-10/12 flex justify-center">
-        <Tabs defaultValue="account">
+      <div className="w-full flex justify-start">
+        <Tabs defaultValue="account" className=" w-10/12 mx-auto">
           <TabsList>
             <TabsTrigger value="log-in" asChild>
-              <Button variant="outline">Log In</Button>
+              <p>Log In</p>
+              {/* <Button variant="outline">Log In</Button> */}
             </TabsTrigger>
             <TabsTrigger value="register" asChild>
-              
-              <Button variant="outline">Register</Button>
+            <p>Register</p>
+              {/* <Button variant="outline">Register</Button> */}
             </TabsTrigger>
           </TabsList>
           <TabsContent value="register">
