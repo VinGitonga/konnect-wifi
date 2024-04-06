@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         kblack:'#050505',
         kLightGrey:'#FCFCFC',
+        kYellow:'#f3bb17',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

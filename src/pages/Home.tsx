@@ -12,6 +12,7 @@ import { HiOutlineWifi } from "react-icons/hi2";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
+import Login from "./auth/login";
 
 interface INavOption {
   icon: ReactNode;
@@ -55,7 +56,7 @@ const Home = () => {
       </div>
 
       <div className="w-full flex justify-start">
-        <Tabs defaultValue="account" className=" w-10/12 mx-auto">
+        <Tabs defaultValue="log-in" className=" w-10/12 mx-auto">
           <TabsList>
             <TabsTrigger value="log-in" asChild>
               <p>Log In</p>
@@ -69,7 +70,9 @@ const Home = () => {
           <TabsContent value="register">
             Make changes to your account here.
           </TabsContent>
-          <TabsContent value="log-in">Change your password here.</TabsContent>
+          <TabsContent value="log-in" className=" flex  justify-center">
+            <Login/>
+          </TabsContent>
         </Tabs>
       </div>
     </div>
